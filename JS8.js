@@ -11,4 +11,4 @@ var d = {
 
 console.log(d["weight"]);
 
-// 78
+// 84
