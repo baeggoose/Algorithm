@@ -10,10 +10,8 @@
 //  *******
 // *********
 
-// k를 입력하세요
-
+let k = prompt("숫자를 입력하세요");
 let tree = "";
-let k = 5;
 
 for (let i = 0; i < k; i++) {
   for (let j = k; j > i; j--) {
