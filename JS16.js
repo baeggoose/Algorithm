@@ -2,9 +2,8 @@
 // 문장이 입력되면 거꾸로 출력하는 프로그램을 만들어 봅시다.
 // 입력 : 거꾸로
 // 출력 : 로꾸거
-function reverse(string) {
-  let reverse = string.split("");
-  reverse = reverse.reverse();
-  return reverse.join("");
-}
-console.log(reverse("거꾸로"));
+const str = prompt.("입력");
+
+const ReverseStr = input.split('').reverse().join()
+
+console.log(ReverseStr());
