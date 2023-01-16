@@ -3,6 +3,7 @@
 // 유주가 담당하는 놀이기구는 키가 150cm 이상만 탈 수 있습니다.
 // 입력으로 키가 주어지면
 // 키가 150이 넘으면 **YES**를 틀리면 **NO**를 출력하는 프로그램을 작성하세요.
+// 내 답안
 const input = prompt("키를 입력하세요");
 function output() {
   let result;
@@ -14,3 +15,11 @@ function output() {
   return result;
 }
 console.log(output());
+// 교재 답안
+const height = prompt("키를 입력하세요.");
+
+if (height >= 150) {
+  console.log("YES");
+} else {
+  console.log("NO");
+}
