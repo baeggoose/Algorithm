@@ -4,8 +4,11 @@
 // **단, 소숫점 자리는 모두 버립니다.**
 // 입력 : 20 30 40
 // 출력 : 30
-const score = [20, 30, 40];
-function average(score) {
-  score.reduce((sum, current) => sum + current) / score.length;
+const score = prompt("점수를 입력하세요").split(" ");
+let sum = 0;
+
+for (i = 0; i < score.length; i++) {
+  sum += parseInt(score[i], 10);
 }
-console.log(average(score));
+const ave = Math.floor(sum / score.length);
+console.log(ave);
