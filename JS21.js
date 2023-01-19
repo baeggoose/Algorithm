@@ -7,4 +7,4 @@
 // 4)  var x = new Set(range(5));
 // 5)  var x = new Set();
 
-// 5
+// 3,5
