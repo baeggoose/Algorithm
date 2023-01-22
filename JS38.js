@@ -6,15 +6,3 @@
 // **학생들의 점수를 공백으로 구분하여 입력을 받고 사탕을 받을 학생의 수를 출력하세요.**
 // 입력 : 97 86 75 66 55 97 85 97 97 95
 // 출력 : 6
-const score = prompt("점수를 입력하세요").split(" ");
-score.sort((a, b) => a - b);
-let top3 = [];
-let count = 0;
-while (top3.length < 4) {
-  let value = score.pop();
-  if (!top3.includes(value)) {
-    top3.push(value);
-  }
-  count++;
-}
-console.log(count - 1);
