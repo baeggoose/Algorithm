@@ -4,5 +4,9 @@
 // 출력 : 5 4 3 2 1
 // 입력 : 2 4 6 7 8
 // 출력 : 8 7 6 4 2
-const n = prompt().split(" ");
-console.log(n.reverse());
+const n = prompt().split(" ").reverse();
+const m = "";
+for (i = 0; i < n.length; i++) {
+  m += n[i];
+}
+console.log(m);
