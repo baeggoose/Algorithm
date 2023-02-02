@@ -12,4 +12,9 @@ let top3 = [];
 let count = 0;
 while (top3.length < 4) {
   let value = score.pop();
+  if (!top3.includes(value)) {
+    top3.push(value);
+  }
+  count++;
 }
+console.log(count - 1);
