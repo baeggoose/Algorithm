@@ -4,13 +4,17 @@
 // (소수 : 1과 자기 자신만으로 나누어떨어지는 1보다 큰 양의 정수)
 const n = prompt("숫자 입력");
 const isPrime = (n) => {
+  // Number(n) 어디에?;
   for (let i = 2; i <= Math.ceil(Math.sqrt(n)); i++) {
     if (n % i === 0) {
       console.log("NO");
       return;
     }
+    if (n === 1) {
+      console.log("NO");
+      return;
+    }
   }
   console.log("YES");
-  return;
 };
 isPrime(n);
