@@ -8,3 +8,7 @@
 let decimal = prompt("10진수 입력");
 let binary = parseInt(decimal, 10).toString(2);
 console.log(binary);
+
+// 2.number,toString
+const num = Number(prompt("숫자 입력"));
+console.log(num.toString(2));
