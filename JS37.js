@@ -6,3 +6,11 @@
 // 출력
 // 혜원(이)가 총 4표로 반장이 되었습니다.
 const arr = prompt("후보 입력").split(" ");
+let result = {};
+let winner = "";
+for (index in arr) {
+  let val = arr[index];
+  result[val] = result[val] === undefined ? 1 : result[val] + 1;
+}
+winner = Object.keys(result).reduce((a, b) => (result[a] > result[b] ? a : b));
+console.log(`${winner}(이)기  총${result[winner]}표로 반장이 되었습니다.`);
