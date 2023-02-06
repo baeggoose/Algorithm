@@ -7,3 +7,18 @@
 // 출력 : 18
 // 입력 : 3849
 // 출력 : 24
+
+// 1.10으로 나누어 각 나머지를 더하기
+let num = prompt("숫자 입력");
+let sum = 0;
+while (num) {
+  sum += num % 10;
+  num = Math.floor(num / 10);
+}
+console.log(sum);
+
+// 2.spilt,reduce
+let n = prompt("숫자 입력")
+  .split("")
+  .reduce((a, b) => a + parseInt(b), 0);
+console.log(n);
