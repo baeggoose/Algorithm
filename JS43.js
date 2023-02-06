@@ -12,3 +12,12 @@ console.log(binary);
 // 2.number,toString
 const num = Number(prompt("숫자 입력"));
 console.log(num.toString(2));
+
+// 3.while
+let dec = prompt();
+let bin = [];
+while (dec) {
+  bin.push(dec % 2);
+  dec = Math.floor(dec / 2);
+}
+console.log(bin.reverse().join(""));
