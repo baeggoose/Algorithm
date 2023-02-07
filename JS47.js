@@ -11,7 +11,7 @@ const people = {
   이호: "01050443904",
   이호준: "01050442903",
 };
-let result = new set();
+let result = new Set();
 for (let key in people) {
   result.add(people[key]);
 }
