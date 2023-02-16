@@ -6,21 +6,26 @@
 // **입력으로 주어진 괄호 문자열이 바른 문자열인지 바르지 않은 문자열인지 "YES"와 "NO"로 구분된 문자열을 출력해보자.**
 
 function mathBracket(e) {
+  let count = "";
+
   for (let i = 0; i < e.length; i++) {
-    let count = "";
     if (e[i] === "(") {
       count++;
-    } else {
+    }
+    if (e[i] === ")") {
       count--;
     }
-    if (count !== 0) {
-      return false;
+  }
+  if (count !== 0) {
+    return false;
+  }
+
+  let 괄호 = [];
+  for (let i in e) {
+    if (e[i] === "(") {
+      괄호.push("(");
     }
 
-    let 괄호 = [];
-    if (e[i] === "(") {
-      괄호.push();
-    }
     if (e[i] === ")") {
       if (괄호.length === 0) {
         return false;
@@ -33,7 +38,7 @@ function mathBracket(e) {
 
 const n = prompt("입력").split("");
 
-if (mathBracket === true) {
+if (mathBracket(n) === true) {
   console.log("YES");
 } else {
   console.log("NO");
