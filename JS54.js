@@ -17,11 +17,11 @@
 
 const num = prompt("숫자를 입력하세요").split(" ").sort();
 function solution(num) {
-  for (let i = 0; i < num.length; i++) {
+  for (let i = 0; i < num.length - 1; i++) {
     if (Number(num[i]) + 1 !== Number(num[i + 1])) {
       return "NO";
     }
   }
   return "YES";
 }
-console.log(num);
+console.log(solution(num));
