@@ -5,6 +5,7 @@
 // 원범 원범 혜원 혜원 혜원 혜원 유진 유진
 // 출력
 // 혜원(이)가 총 4표로 반장이 되었습니다.
+
 const arr = prompt("후보 입력").split(" ");
 let result = {};
 let winner = "";
