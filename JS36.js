@@ -3,3 +3,11 @@
 
 // 입력 : 2
 // 출력 : 2 4 6 8 10 12 14 16 18
+
+const num = prompt("구구단을 외자");
+let result = "";
+for (i = 1; i <= 9; i++) {
+  result += i * num + " ";
+}
+
+console.log(result);
