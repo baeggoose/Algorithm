@@ -4,8 +4,16 @@
 // 각 자리의 숫자를 더하면 21입니다. (1+0+1+1+1+2+1+3+1+4+1+5 = 21)
 
 // 생각의 흐름 : 1부터 20까지 for 문을 돌린다 => 값을 어떤 변수에 배열로 저장한다 => 배열을 split("")해서 나눈다 => reduce()를 이용한다?
-let sum = 0;
-for (let i = 1; i <= 20; i++) {
-  sum += i;
+
+let arr = [];
+let total = 0;
+for (let i = 0; i < 20; i++) {
+  arr[i] = i + 1;
 }
-console.log(sum.split("").reduce((a, b) => a + b));
+arr.forEach((n) => {
+  while (n) {
+    total = total + (n % 10);
+    n = Math.floor(n / 10);
+  }
+});
+console.log(total);
