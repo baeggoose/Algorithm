@@ -27,7 +27,7 @@ function hanoi(num, start, end, temp) {
   //가장 큰 원반은 목표기둥으로
   route.push([start, end]);
   //경유기둥과 시작기둥을 바꿉니다.
-  hanoi(num - 1, temp, start, end);
+  hanoi(num - 1, temp, end, start);
 }
 
 hanoi(3, "A", "B", "C");
