@@ -21,3 +21,16 @@ for (let i = 0; i <= 1000; i++) {
 }
 
 console.log(obj[1]);
+
+// 2번 for of 를 이용한 방법
+let s = "";
+for (let i = 0; i <= 1000; i++) {
+  s += i;
+}
+let count = 0;
+for (let j of s) {
+  if (j == 1) {
+    count++;
+  }
+}
+console.log(count);
