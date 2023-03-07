@@ -34,3 +34,16 @@ for (let j of s) {
   }
 }
 console.log(count);
+
+// 3번 for in 을 이용한 방법
+let st = "";
+for (let i = 0; i <= 1000; i++) {
+  st += i;
+}
+let ct = 0;
+for (let j in st) {
+  if (st[j] == 1) {
+    ct++;
+  }
+}
+console.log(ct);
