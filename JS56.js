@@ -21,8 +21,8 @@ let gap = Math.max.apply(null, values);
 let item = [];
 
 for (let i in entry) {
-  if (gap > Math.abs(entry[i][0] - k)) {
-    gap = Math.abs(entry[i][0] - k);
+  if (gap > Math.abs(entry[i][1] - k)) {
+    gap = Math.abs(entry[i][1] - k);
     item = entry[i];
   }
 }
