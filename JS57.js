@@ -47,3 +47,10 @@ for (let j in st) {
   }
 }
 console.log(ct);
+
+// 4번 정규표현식을 이용한 방법
+let str = "";
+for (let i = 0; i <= 1000; i++) {
+  str += i;
+}
+console.log(str.match(/1/g).length);
