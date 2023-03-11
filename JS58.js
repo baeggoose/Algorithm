@@ -4,9 +4,5 @@
 // **숫자를 입력받고 천 단위로 콤마(,)를 찍어주세요.**
 // 예를 들어, **123456789**를 입력받았으면 **123,456,789**를 출력해야 합니다.
 
-const cash = prompt("정산금을 입력하세요").split();
-let result = [];
-for (i = 0; i < cash.length; i++) {
-  result.push();
-}
-console.log(result);
+const cash = prompt("정산금을 입력하세요");
+console.log(cash.toLocaleString);
