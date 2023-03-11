@@ -13,6 +13,6 @@ function comma(a) {
   if (a.length <= 3) {
     return a;
   } else {
-    return comma();
+    return comma(a.slice(0, s.length - 3) + "," + s.slice(s.length - 3));
   }
 }
