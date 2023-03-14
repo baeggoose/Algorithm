@@ -9,5 +9,6 @@
 
 const str = prompt("문자열 입력");
 const left = str.padStart(25 - str.length / 2, "=");
-const right = left.padEnd(50 - str.length / 2, "=");
+const right = left.padEnd(50, "=");
 console.log(right);
+console.log(right.length);
