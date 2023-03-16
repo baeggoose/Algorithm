@@ -8,7 +8,8 @@
 //생각의 흐름: 문자열 길이는 50 반을 나누어 입력값을 push?
 
 const str = prompt("문자열 입력");
-const left = str.padStart(25 - str.length / 2, "=");
+const left = str.padStart(25 + str.length / 2, "=");
 const right = left.padEnd(50, "=");
+console.log(left.length);
 console.log(right);
 console.log(right.length);
