@@ -31,6 +31,6 @@ const students = [
 // 번호: 12, 이름: 홍유진
 
 students.sort();
-for (let key of students) {
-  console.log(`번호:${key[students]}, 이름: ${key}`);
+for (let key in students) {
+  console.log(`번호:${parseInt(key, 10) + 1}, 이름: ${students[key]}`);
 }
