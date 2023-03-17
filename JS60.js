@@ -32,5 +32,5 @@ const students = [
 
 students.sort();
 for (let key of students) {
-  console.log(`번호:${key}, 이름: ${students[key]}`);
+  console.log(`번호:${key[students]}, 이름: ${key}`);
 }
