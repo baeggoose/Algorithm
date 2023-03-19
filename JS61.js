@@ -5,3 +5,5 @@
 // 출력
 // a3b4c1d4
 const input = prompt("요약할 문구 입력");
+const set = new Set(input);
+console.log(set);
