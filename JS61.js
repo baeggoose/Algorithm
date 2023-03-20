@@ -5,5 +5,14 @@
 // 출력
 // a3b4c1d4
 const input = prompt("요약할 문구 입력");
-const set = new Set(input);
-console.log(set);
+let result = "";
+let store = input[0];
+let count = 0;
+for (let i of input) {
+  if (i == store) {
+    result += store + count;
+  } else {
+    count += 1;
+  }
+}
+console.log(result);
