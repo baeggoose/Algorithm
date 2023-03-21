@@ -10,8 +10,10 @@ let store = input[0];
 let count = 0;
 for (let i of input) {
   if (i == store) {
-    result += store + count;
+    count += 1;
   } else {
+    result += store + count;
+    store = i;
     count += 1;
   }
 }
