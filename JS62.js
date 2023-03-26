@@ -9,13 +9,13 @@
 // 5. input을 이용해서는 안됩니다.
 const user_s = "aacdddddddddgghhh";
 let result_s = "";
-Console.log(
+console.log(
   `${user_s.match(/a/g).length}
-  ${user_s.match(/b/g).length}
+  ${Number(user_s.match(/b/g))}
   ${user_s.match(/c/g).length}
   ${user_s.match(/d/g).length}
-  ${user_s.match(/e/g).length}
-  ${user_s.match(/f/g).length}
+  ${Number(user_s.match(/e/g))}
+  ${Number(user_s.match(/f/g))}
   ${user_s.match(/g/g).length}
   ${user_s.match(/h/g).length}`
 );
