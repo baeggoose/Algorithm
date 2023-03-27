@@ -7,15 +7,12 @@
 // 3. 시간, 날짜 함수를 사용해서는 안됩니다.
 // 4. 에러 번호 출력을 이용해서는 안됩니다.
 // 5. input을 이용해서는 안됩니다.
-const user_s = "aacdddddddddgghhh";
+const user_s = "aacdddddddddfffffffffgghhh";
 let result_s = "";
 console.log(
-  `${user_s.match(/a/g).length}
-  ${Number(user_s.match(/b/g))}
-  ${user_s.match(/c/g).length}
-  ${user_s.match(/d/g).length}
-  ${Number(user_s.match(/e/g))}
-  ${Number(user_s.match(/f/g))}
-  ${user_s.match(/g/g).length}
-  ${user_s.match(/h/g).length}`
+  `${user_s.match(/a/g).length}${Number(user_s.match(/b/g))}${
+    user_s.match(/c/g).length
+  }${user_s.match(/d/g).length}${Number(user_s.match(/e/g))}${
+    user_s.match(/f/g).length
+  }${user_s.match(/g/g).length}${user_s.match(/h/g).length}`
 );
