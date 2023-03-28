@@ -5,14 +5,16 @@
 // 출력
 // a3b4c1d4
 const input = prompt("문자 입력");
-const result = "";
+let result = "";
 let count = 0;
 let store = input[0];
 for (let i of input) {
   if (i == store) {
     count += 1;
   } else {
-    result += i + count;
+    result += store + count;
+    store = i;
+    count = 1;
   }
 }
 console.log(result);
