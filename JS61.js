@@ -17,4 +17,5 @@ for (let i of input) {
     count = 1;
   }
 }
+result += store + count;
 console.log(result);
