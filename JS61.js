@@ -4,18 +4,15 @@
 // aaabbbbcdddd
 // 출력
 // a3b4c1d4
-const input = prompt("요약할 문구 입력");
-let result = "";
-let store = input[0];
+const input = prompt("문자 입력");
+const result = "";
 let count = 0;
+let store = input[0];
 for (let i of input) {
   if (i == store) {
     count += 1;
   } else {
-    result += store + count;
-    store = i;
-    count = 1;
+    result += i + count;
   }
 }
-result += store + count;
 console.log(result);
