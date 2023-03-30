@@ -11,4 +11,5 @@ const sentence = prompt("줄일 말 입력").split(" ");
 let result = "";
 for (let i of sentence) {
   result += i[0];
+  // result += s.slice(0, 1); 다른 풀이 추가
 }
