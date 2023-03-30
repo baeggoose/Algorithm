@@ -8,11 +8,17 @@
 // 출력
 // 가장 적게 옮길 수 있는 횟수를 출력합니다.
 // 만약 어떻게 해도 정량이 N이 되지 않는다면 -1을 출력합니다.
-const N = 24;
+let N = prompt("정량입력");
 let move = 0;
 while (true) {
   if (N % 7 == 0) {
-    move += n / 7;
+    move += parseInt(N / 7);
+    break;
   }
-  break;
+  N -= 3;
+  move += 1;
+  if (N < 0) {
+    console.log(-1);
+    break;
+  }
 }
