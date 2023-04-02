@@ -32,6 +32,7 @@ function Check(Part, Rule) {
       if (Temp > Rule.indexOf(Text)) {
         return "불가능";
       }
+      Temp = Rule.indexOf(Text);
     }
   }
   return "가능";
