@@ -27,5 +27,13 @@ function solution(Block, Rule) {
 
 function Check(Part, Rule) {
   let Temp = Rule.indexOf(Rule[0]);
+  for (let Text of Part) {
+    if (Rule.includes(Text)) {
+      if (Temp > Rule.indexOf(Text)) {
+        return "불가능";
+      }
+    }
+  }
+  return "가능";
 }
 console.log(solution(Block, Rule));
