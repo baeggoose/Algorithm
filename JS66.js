@@ -25,5 +25,7 @@ function solution(Block, Rule) {
   return answer;
 }
 
-function Check(Part, Rule) {}
+function Check(Part, Rule) {
+  let Temp = Rule.indexOf(Rule[0]);
+}
 console.log(solution(Block, Rule));
