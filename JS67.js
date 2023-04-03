@@ -19,5 +19,15 @@ function solution(n) {
   let people = 0;
   let handshake = 0;
   let temp = 0;
-  while (true) {}
+  while (true) {
+    handshake = parseInt((people * (people - 1)) / 2, 10);
+    if (n < handshake) {
+      break;
+    }
+    people += 1;
+    temp = parseInt(n - handshake, 10);
+  }
+  console.log([temp, people]);
 }
+const n = 59;
+console.log(solution(n));
