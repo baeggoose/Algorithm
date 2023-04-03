@@ -27,7 +27,7 @@ function solution(n) {
     people += 1;
     temp = parseInt(n - handshake, 10);
   }
-  console.log([temp, people]);
+  return [temp, people];
 }
 const n = 59;
 console.log(solution(n));
