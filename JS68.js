@@ -28,7 +28,9 @@ function solution(Bus, Standard) {
     } else {
       let hour = parseInt((time - Standard) / 60, 10);
       let min = parseInt((time - Standard) % 60, 10);
-      answer.push(String(hour) + String(min));
+      answer.push(
+        String(hour).padStart(2, 0) + "시간" + String(min).padStart(2, 0) + "분"
+      );
     }
   }
   return answer;
