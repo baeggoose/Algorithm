@@ -26,6 +26,9 @@ function solution(Bus, Standard) {
     if (time < Standard) {
       answer.push("지나갔습니다");
     } else {
+      let hour = parseInt((time - Standard) / 60, 10);
+      let min = parseInt((time - Standard) % 60, 10);
+      answer.push(String(hour) + String(min));
     }
   }
   return answer;
