@@ -16,8 +16,14 @@ const Standard = "12:40";
 // 생각의 흐름: 입력 배열과 주어진 현재시간을 순회, 비교하여 결과를 출력한다
 function solution(Bus, Standard) {
   // let answer = [];
-  Standard = Standard.split(":").map((n) => parseInt(n), 10);
+  Standard = Standard.split(":").map((n) => parseInt(n, 10));
   Standard = Standard[0] * 60 + Standard[1];
+
+  for (let i in Bus) {
+    let time = Bus[i].split(":").map((n) => parseInt(n, 10));
+    time = time[0] * 60 + time[1];
+    console.log(time);
+  }
   // return answer;
   console.log(Standard);
 }
