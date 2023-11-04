@@ -28,7 +28,17 @@ for (let i = 0; i < val; i++) {
 }
 
 for (let n of prime) {
-  if (prime.includes(val - n)) {
+  if (prime.includes(val - n) && n <= val - n) {
     partition.push([n, val - n]);
   }
 }
+
+console.log(partition);
+
+let diff = partition.map((e) => e[1] - e[0]);
+
+let minNum = partition[diff.indexOf(Math.min.apply(null, diff))];
+let maxNum = partition[diff.indexOf(Math.max.apply(null, diff))];
+
+console.log(minNum);
+console.log(maxNum);
