@@ -9,3 +9,26 @@
 // 56 == 19 + 37
 // **2보다 큰 짝수 n이 주어졌을 때, 골드바흐 파티션을 출력하는 코드를** 작성하세요.
 // * 해당 문제의 출력 형식은 자유롭습니다. 가능하시다면 골드바흐 파티션 모두를 출력하거나, 그 차가 작은 것을 출력하거나 그 차가 큰 것 모두 출력해보세요.
+
+let prime = [];
+let inPrime = true;
+let val = 100;
+let partition = [];
+
+for (let i = 0; i < val; i++) {
+  for (let j = 2; j < i; j++) {
+    if (i % j == 0) {
+      isPrime = false;
+    }
+  }
+  if (isPrime) {
+    prime.push(i);
+  }
+  isPrime = true;
+}
+
+for (let n of prime) {
+  if (prime.includes(val - n)) {
+    partition.push([n, val - n]);
+  }
+}
