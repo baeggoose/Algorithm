@@ -11,11 +11,11 @@
 // * 해당 문제의 출력 형식은 자유롭습니다. 가능하시다면 골드바흐 파티션 모두를 출력하거나, 그 차가 작은 것을 출력하거나 그 차가 큰 것 모두 출력해보세요.
 
 let prime = [];
-let inPrime = true;
+let isPrime = true;
 let val = 100;
 let partition = [];
 
-for (let i = 0; i < val; i++) {
+for (let i = 2; i < val; i++) {
   for (let j = 2; j < i; j++) {
     if (i % j == 0) {
       isPrime = false;
